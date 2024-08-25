@@ -1,2 +1,4 @@
 gradio
 whisperx
+torch
+torchaudio
