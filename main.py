@@ -147,7 +147,6 @@ A simple interface to transcribe audio files using the Whisper model''')
 			with gr.Column():
 				model_select = gr.Dropdown(['large-v2', 'large-v1', 'large', 'medium', 'small', 'base', 'tiny', 'medium.en', 'small.en', 'base.en', 'tiny.en'], value='base', label='Load Model')
 				with gr.Row():
-					audio_upload = gr.Audio(source='upload', type='filepath', label='Upload Audio File')
 					audio_record = gr.Audio(source='microphone', type='numpy', label='or Record Audio (If both are provided, only microphone audio will be used)')
 				gr.Examples(examples=['examples/coffe_break_example.mp3'], inputs=audio_upload)
 				with gr.Accordion(label='Advanced Options', open=False):
